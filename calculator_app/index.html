@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" href="style/style.css">
+        <script src="test.js" defer> </script>
+    </head>
+
+
+    <body>
+        <div class="container">
+            <div class="calculator">
+                    <div class="calculator_line">
+                        <input type="text" name="display" id="display" readonly>
+                    </div>
+                    <div class="calculator_line">
+                        <input type="button" name="AC" value="AC" onclick="clearDisplay()">
+                        <input type="button" name="DEL" value="DEL" onclick="deleteLastItem()">
+                        <input type="button" name="%" value="%" onclick="appendDisplay(value)">
+                        <input type="button" name="/" value="/" onclick="appendDisplay(value)"> 
+                    </div>
+                    <div class="calculator_line">
+                        <input type="button" name="7" value="7" onclick="appendDisplay(value)">
+                        <input type="button" name="8" value="8" onclick="appendDisplay(value)">
+                        <input type="button" name="9" value="9" onclick="appendDisplay(value)">
+                        <input type="button" name="*" value="*" onclick="appendDisplay(value)">
+                    </div>
+                    <div class="calculator_line">
+                        <input type="button" name="4" value="4" onclick="appendDisplay(value)">
+                        <input type="button" name="5" value="5" onclick="appendDisplay(value)">
+                        <input type="button" name="6" value="6" onclick="appendDisplay(value)">
+                        <input type="button" name="-" value="-" onclick="appendDisplay(value)">
+                    </div>
+                    <div class="calculator_line">
+                        <input type="button" name="1" value="1" onclick="appendDisplay(value)">
+                        <input type="button" name="2" value="2" onclick="appendDisplay(value)">
+                        <input type="button" name="3" value="3" onclick="appendDisplay(value)">
+                        <input type="button" name="+" value="+" onclick="appendDisplay(value)">
+                    </div>
+                    <div class="calculator_line">
+                        <input type="button" name="0" value="0" onclick="appendDisplay(value)">
+                        <input type="button" name="." value="." onclick="appendDisplay(value)">
+                        <input type="button" name="=" value="=" onclick="calculate()">
+                    </div>
+            </div>
+        </div>
+    </body>
+</html>
