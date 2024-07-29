@@ -31,6 +31,7 @@ function handleKeyboardInput(event){
     }else if(key==='.'){
         appendDisplay(key)
     }else if(key==='Enter' || key=== '='){
+        event.preventDefault();
         calculate();
     }else if(key==='Backspace'){
         deleteLastItem();
